@@ -60,6 +60,7 @@ public class Messenger extends AppCompatActivity implements View.OnClickListener
         conversation = findViewById(R.id.conversation);
         boxtext = findViewById(R.id.box_txt);
         send = findViewById(R.id.send);
+        conversation.setFocusable(false);
     }
 
     private void handleClick() {
