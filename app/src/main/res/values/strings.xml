@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">mqttMessenger</string>
-    <string name="name">Name</string>
-    <string name="room">Room</string>
+    <string name="broker">Broker</string>
+    <string name="topic">Topic</string>
     <string name="login">Login</string>
     <string name="send">Send</string>
 

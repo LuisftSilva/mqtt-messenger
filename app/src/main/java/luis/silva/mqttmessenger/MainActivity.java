@@ -1,4 +1,4 @@
-package com.example.mqttmessenger;
+package luis.silva.mqttmessenger;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,10 +9,12 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.mqttmessenger.R;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText name;
-    private EditText room;
+    private EditText broker;
+    private EditText topic;
     private TextView button;
     private Context context;
     private String Name, Room;
@@ -31,8 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void defineIds() {
         button = findViewById(R.id.login);
-        name = findViewById(R.id.name);
-        room = findViewById(R.id.room);
+        broker = findViewById(R.id.broker);
+        topic = findViewById(R.id.topic);
 
     }
 
@@ -43,15 +45,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Name = name.getText().toString().trim();
-        Room = room.getText().toString().trim();
-
-        System.out.println(Name);
-        System.out.println(Room);
 
         if (v == button) {
-            sharedPreferences.edit().putString("name",Name).apply();
-            sharedPreferences.edit().putString("room",Room).apply();
+            sharedPreferences.edit().putString("broker",broker.getText().toString().trim()).apply();
+            sharedPreferences.edit().putString("topic",topic.getText().toString().trim()).apply();
             Intent intent = new Intent(context, Messenger.class);
             startActivity(intent);
             finish();

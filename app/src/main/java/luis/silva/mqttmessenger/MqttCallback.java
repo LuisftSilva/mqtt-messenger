@@ -1,4 +1,4 @@
-package com.example.mqttmessenger;
+package luis.silva.mqttmessenger;
 
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 

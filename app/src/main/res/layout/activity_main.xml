@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="luis.silva.mqttmessenger.MainActivity">
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/broker"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="70dp"
         android:layout_marginStart="70dp"
-        android:hint="@string/name"
+        android:hint="@string/broker"
         android:padding="7dp"
         android:singleLine="true"
         android:text=""
@@ -25,12 +25,12 @@
         app:layout_constraintVertical_bias="0.226" />
 
     <EditText
-        android:id="@+id/room"
+        android:id="@+id/topic"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="70dp"
         android:layout_marginStart="70dp"
-        android:hint="@string/room"
+        android:hint="@string/topic"
         android:padding="7dp"
         android:singleLine="true"
         android:text=""
