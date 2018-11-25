@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.example.mqttmessenger"
+        applicationId "luis.silva.mqttmessenger"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
@@ -26,4 +26,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2'
+
+    def nav_version = "1.0.0-alpha02"
+    implementation "android.arch.navigation:navigation-fragment:$nav_version"
+    implementation "android.arch.navigation:navigation-ui:$nav_version"
+
 }

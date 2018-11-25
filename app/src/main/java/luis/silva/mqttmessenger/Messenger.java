@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 
-import com.example.mqttmessenger.R;
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
@@ -35,7 +34,7 @@ public class Messenger extends AppCompatActivity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_irrigation);
+        //setContentView(R.layout.activity_irrigation);
         context = Messenger.this;
         defineIds();
         handleClick();
@@ -50,9 +49,9 @@ public class Messenger extends AppCompatActivity implements View.OnClickListener
 
     private void defineIds() {
 
-        conversation = findViewById(R.id.conversation);
-        boxtext = findViewById(R.id.box_txt);
-        send = findViewById(R.id.send);
+        //conversation = findViewById(R.id.conversation);
+        //boxtext = findViewById(R.id.box_txt);
+        //send = findViewById(R.id.send);
         conversation.setFocusable(false);
     }
 

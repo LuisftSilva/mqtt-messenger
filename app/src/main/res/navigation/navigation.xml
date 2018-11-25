@@ -1,0 +1,10 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/broker_topic">
+
+    <fragment
+        android:id="@+id/broker_topic"
+        android:name="luis.silva.mqttmessenger.fragments.BrokerTopic"></fragment>
+
+</navigation>
