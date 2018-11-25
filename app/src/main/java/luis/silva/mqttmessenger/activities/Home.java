@@ -15,8 +15,10 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
+
         this.setContentView(R.layout.activity_home);
-        Navigation.findNavController(findViewById(R.id.fragment)).navigate(R.id.broker_topic);
+        //Navigation.findNavController(findViewById(R.id.fragment)).navigate(R.id.type);
 
         Log.d(TAG, "Home onCreate: success");
     }
