@@ -18,7 +18,7 @@ import android.widget.TextView;
 import androidx.navigation.Navigation;
 import luis.silva.mqttmessenger.R;
 
-public class Type extends Fragment implements View.OnClickListener {
+public class TypeSystem extends Fragment implements View.OnClickListener {
 
     private View view;
     private EditText broker, topic;
@@ -27,13 +27,13 @@ public class Type extends Fragment implements View.OnClickListener {
     private Activity activity;
     private SharedPreferences sharedPreferences;
     private ConstraintLayout button, temperatureSensor, potentiometer;
-    private static final String TAG = "Type";
+    private static final String TAG = "TypeSystem";
 
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_type, container, false);
+        view = inflater.inflate(R.layout.fragment_type_system, container, false);
 
         // sharedPreferences = context.getSharedPreferences("userPreferences", Context.MODE_PRIVATE);
 

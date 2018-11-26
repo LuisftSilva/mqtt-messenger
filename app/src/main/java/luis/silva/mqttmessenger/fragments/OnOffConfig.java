@@ -15,51 +15,50 @@ import luis.silva.mqttmessenger.R;
 
 import static android.support.constraint.Constraints.TAG;
 
-public class TypeButton extends Fragment implements View.OnClickListener {
+public class OnOffConfig extends Fragment implements View.OnClickListener {
 
     private View view;
     private Button onOffButton;
-    private static final String TAG = "TypeButton";
+    private static final String TAG = "OnOffConfig";
+
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        view = inflater.inflate(R.layout.fragment_type_button, container, false);
+        view = inflater.inflate(R.layout.fragment_on_off_config, container, false);
 
         // sharedPreferences = context.getSharedPreferences("userPreferences", Context.MODE_PRIVATE);
-        defineIds();
-        handleClick();
-        Log.d(TAG, "TypeButton onCreateView: success");
+
+        Log.d(TAG, "OnOffConfig onCreateView: success");
 
         return view;
     }
 
     private void defineIds() {
 
-        onOffButton = view.findViewById(R.id.on_off_button);
+      //  onOffButton = view.findViewById(R.id.on_off_button);
 
     }
 
     private void handleClick() {
 
-        onOffButton.setOnClickListener(this);
+       // onOffButton.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
 
-        if (v == onOffButton) {
+      /*  if (v == onOffButton) {
 
-            Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.on_off_config);
+            Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.type_button);
 
-        } //else if (v == temperatureSensor) {
-
-
-        //  } else if (v == potentiometer) {
+        } else if (v == temperatureSensor) {
 
 
-        //  }
+        } else if (v == potentiometer) {
+
+
+        }*/
     }
-
 }

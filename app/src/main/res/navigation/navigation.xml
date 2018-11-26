@@ -1,15 +1,19 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/type">
+    app:startDestination="@+id/type_system">
 
     <fragment
-        android:id="@+id/type"
-        android:name="luis.silva.mqttmessenger.fragments.Type"></fragment>
+        android:id="@+id/type_system"
+        android:name="luis.silva.mqttmessenger.fragments.TypeSystem"></fragment>
 
     <fragment
         android:id="@+id/type_button"
         android:name="luis.silva.mqttmessenger.fragments.TypeButton"></fragment>
+
+    <fragment
+        android:id="@+id/on_off_config"
+        android:name="luis.silva.mqttmessenger.fragments.OnOffConfig"></fragment>
 
     <fragment
         android:id="@+id/broker_topic"
