@@ -53,6 +53,9 @@
 
     <string name="feedback_example">EXAMPLE: {\'room':'1\'}</string>
 
+    <!--fragment_push_config -->
+
+    <string name="command">Command</string>
 
 
 </resources>

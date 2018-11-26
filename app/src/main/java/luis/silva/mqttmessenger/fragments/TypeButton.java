@@ -37,13 +37,13 @@ public class TypeButton extends Fragment implements View.OnClickListener {
     private void defineIds() {
 
         onOffButton = view.findViewById(R.id.on_off_button);
-
+        pushButton = view.findViewById(R.id.push_button);
     }
 
     private void handleClick() {
 
         onOffButton.setOnClickListener(this);
-
+        pushButton.setOnClickListener(this);
     }
 
     @Override
@@ -55,7 +55,7 @@ public class TypeButton extends Fragment implements View.OnClickListener {
 
         } else if (v == pushButton) {
 
-            Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.on_off_config);
+            Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.push_config);
 
 
             //  } else if (v == potentiometer) {

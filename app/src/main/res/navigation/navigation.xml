@@ -20,6 +20,10 @@
         android:name="luis.silva.mqttmessenger.fragments.Feedback"></fragment>
 
     <fragment
+        android:id="@+id/push_config"
+        android:name="luis.silva.mqttmessenger.fragments.PushConfig"></fragment>
+
+    <fragment
         android:id="@+id/broker_topic"
         android:name="luis.silva.mqttmessenger.fragments.BrokerTopic"></fragment>
 
