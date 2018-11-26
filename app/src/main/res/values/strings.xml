@@ -45,7 +45,11 @@
 
     <string name="topic1">Topic 1</string>
 
+    <string name="message1">Message 1</string>
+
     <string name="topic2">Topic 2</string>
+
+    <string name="message2">Message 2</string>
 
     <string name="feedback_example">EXAMPLE: {\'room':'is_on\'}</string>
 
