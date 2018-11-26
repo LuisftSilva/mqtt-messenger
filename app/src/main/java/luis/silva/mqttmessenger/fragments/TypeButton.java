@@ -57,10 +57,7 @@ public class TypeButton extends Fragment implements View.OnClickListener {
 
             Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.push_config);
 
-
             //  } else if (v == potentiometer) {
-
-
         }
     }
 

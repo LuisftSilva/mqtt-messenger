@@ -67,7 +67,7 @@ public class TypeSystem extends Fragment implements View.OnClickListener {
 
         } else if (v == temperatureSensor) {
 
-
+            Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.sensor_config);
 
         } else if (v == potentiometer) {
 
