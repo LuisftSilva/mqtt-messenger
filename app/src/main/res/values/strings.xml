@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">mqttMessenger</string>
-    <string name="broker">Broker</string>
-    <string name="topic">Topic</string>
     <string name="create">Create</string>
     <string name="send">Send</string>
     <string name="button">Button</string>
@@ -17,5 +15,31 @@
 -Push button always sends the same command."</string>
     <string name="on_off">on-off</string>
     <string name="push_button">push-button</string>
+
+    <!--fragment_on_off_config -->
+
+    <string name="broker">Broker</string>
+    <string name="broker_example">EXAMPLE: broker bla bla bla</string>
+
+    <string name="topic">Topic</string>
+    <string name="topic_example">EXAMPLE: my_room</string>
+
+    <string name="on_command">On command</string>
+    <string name="on_example">EXAMPLE: {\'room':'on\'}</string>
+
+    <string name="off_command">Off command</string>
+    <string name="off_example">EXAMPLE: {\'room':'off\'}</string>
+
+    <string name="feedback">Feedback</string>
+    <string name="feedback_">just if you receive some feedback from the system</string>
+
+    <string name="same_topic">Same Topic</string>
+
+    <string name="different_topic">Different Topic</string>
+
+    <string name="feedback_example">EXAMPLE: {\'room':'is_on\'}</string>
+
+    <string name="create_button">Create Button</string>
+
 
 </resources>
