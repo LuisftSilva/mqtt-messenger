@@ -30,6 +30,12 @@
     <string name="off_command">Off command</string>
     <string name="off_example">EXAMPLE: {\'room':'off\'}</string>
 
+    <string name="create_feedback">I receive feedback</string>
+
+    <string name="create_button">Create Button</string>
+
+    <!--fragment_feedback -->
+
     <string name="feedback">Feedback</string>
     <string name="feedback_">just if you receive some feedback from the system</string>
 
@@ -37,9 +43,12 @@
 
     <string name="different_topic">Different Topic</string>
 
+    <string name="topic1">Topic 1</string>
+
+    <string name="topic2">Topic 2</string>
+
     <string name="feedback_example">EXAMPLE: {\'room':'is_on\'}</string>
 
-    <string name="create_button">Create Button</string>
 
 
 </resources>
