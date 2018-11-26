@@ -57,5 +57,12 @@
 
     <string name="command">Command</string>
 
+    <!--fragment_sensor_config -->
+
+    <string name="create_sensor">Create Sensor</string>
+
+    <string name="scale">Scale</string>
+
+    <string name="scale_example">EXAMPLE: ºC or F or K</string>
 
 </resources>
