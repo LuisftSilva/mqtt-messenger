@@ -9,4 +9,13 @@
     Sensor"</string>
     <string name="potentiometer">Potentiometer</string>
 
+
+    <!--fragment_type_button -->
+    <string name="question">Do you want an on-off button, or do you want a push-button?</string>
+    <string name="explanation">"-Button on off sends command to connect something and sends command to disconnect something.
+
+-Push button always sends the same command."</string>
+    <string name="on_off">on-off</string>
+    <string name="push_button">push-button</string>
+
 </resources>

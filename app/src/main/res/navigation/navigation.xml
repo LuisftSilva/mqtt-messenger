@@ -8,6 +8,10 @@
         android:name="luis.silva.mqttmessenger.fragments.Type"></fragment>
 
     <fragment
+        android:id="@+id/type_button"
+        android:name="luis.silva.mqttmessenger.fragments.TypeButton"></fragment>
+
+    <fragment
         android:id="@+id/broker_topic"
         android:name="luis.silva.mqttmessenger.fragments.BrokerTopic"></fragment>
 

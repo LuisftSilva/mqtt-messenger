@@ -33,7 +33,11 @@ public class BrokerTopic extends Fragment implements View.OnClickListener {
 
         view = inflater.inflate(R.layout.fragment_broker_topic, container, false);
 
-        sharedPreferences = context.getSharedPreferences("userPreferences", Context.MODE_PRIVATE);
+        context = getContext();
+
+        if (context != null) {
+            sharedPreferences = context.getSharedPreferences("userPreferences", Context.MODE_PRIVATE);
+        }
 
         Log.d(TAG, "BrokerTopic onCreateView: success");
 
