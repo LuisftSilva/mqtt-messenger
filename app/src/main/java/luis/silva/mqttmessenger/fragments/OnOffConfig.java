@@ -18,7 +18,7 @@ import static android.support.constraint.Constraints.TAG;
 public class OnOffConfig extends Fragment implements View.OnClickListener {
 
     private View view;
-    private Button onOffButton;
+    private Button feedbackButton;
     private static final String TAG = "OnOffConfig";
 
 
@@ -28,7 +28,8 @@ public class OnOffConfig extends Fragment implements View.OnClickListener {
         view = inflater.inflate(R.layout.fragment_on_off_config, container, false);
 
         // sharedPreferences = context.getSharedPreferences("userPreferences", Context.MODE_PRIVATE);
-
+        defineIds();
+        handleClick();
         Log.d(TAG, "OnOffConfig onCreateView: success");
 
         return view;
@@ -36,29 +37,23 @@ public class OnOffConfig extends Fragment implements View.OnClickListener {
 
     private void defineIds() {
 
-      //  onOffButton = view.findViewById(R.id.on_off_button);
+        feedbackButton = view.findViewById(R.id.feedback_button);
 
     }
 
     private void handleClick() {
 
-       // onOffButton.setOnClickListener(this);
+        feedbackButton.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
 
-      /*  if (v == onOffButton) {
+        if (v == feedbackButton) {
 
-            Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.type_button);
+            Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.feedback);
 
-        } else if (v == temperatureSensor) {
-
-
-        } else if (v == potentiometer) {
-
-
-        }*/
+        }
     }
 }

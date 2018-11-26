@@ -18,7 +18,7 @@ import static android.support.constraint.Constraints.TAG;
 public class TypeButton extends Fragment implements View.OnClickListener {
 
     private View view;
-    private Button onOffButton;
+    private Button onOffButton, pushButton;
     private static final String TAG = "TypeButton";
 
     @Override
@@ -53,13 +53,15 @@ public class TypeButton extends Fragment implements View.OnClickListener {
 
             Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.on_off_config);
 
-        } //else if (v == temperatureSensor) {
+        } else if (v == pushButton) {
+
+            Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.on_off_config);
 
 
-        //  } else if (v == potentiometer) {
+            //  } else if (v == potentiometer) {
 
 
-        //  }
+        }
     }
 
 }

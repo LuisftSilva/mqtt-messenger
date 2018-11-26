@@ -51,7 +51,7 @@
 
     <string name="message2">Message 2</string>
 
-    <string name="feedback_example">EXAMPLE: {\'room':'is_on\'}</string>
+    <string name="feedback_example">EXAMPLE: {\'room':'1\'}</string>
 
 
 
