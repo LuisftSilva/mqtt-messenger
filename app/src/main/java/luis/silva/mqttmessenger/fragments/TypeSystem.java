@@ -71,7 +71,7 @@ public class TypeSystem extends Fragment implements View.OnClickListener {
 
         } else if (v == potentiometer) {
 
-
+            Navigation.findNavController(getActivity().findViewById(R.id.fragment)).navigate(R.id.potentiometer_config);
 
         }
     }

@@ -27,4 +27,8 @@
         android:id="@+id/sensor_config"
         android:name="luis.silva.mqttmessenger.fragments.SensorConfig"></fragment>
 
+    <fragment
+        android:id="@+id/potentiometer_config"
+        android:name="luis.silva.mqttmessenger.fragments.PotentiometerConfig"></fragment>
+
 </navigation>

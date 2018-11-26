@@ -65,4 +65,12 @@
 
     <string name="scale_example">EXAMPLE: ºC or F or K</string>
 
+    <!--fragment_potentiometer_config -->
+
+    <string name="from">From</string>
+
+    <string name="to">To</string>
+
+    <string name="create_potentiometer">Create Potentiometer</string>
+
 </resources>
