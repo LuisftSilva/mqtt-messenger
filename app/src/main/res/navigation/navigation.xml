@@ -1,7 +1,11 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@+id/type_system">
+    app:startDestination="@+id/systems">
+
+    <fragment
+        android:id="@+id/systems"
+        android:name="luis.silva.mqttmessenger.fragments.Systems"></fragment>
 
     <fragment
         android:id="@+id/type_system"

@@ -37,7 +37,7 @@ public class TypeSystem extends Fragment implements View.OnClickListener {
 
         // sharedPreferences = context.getSharedPreferences("userPreferences", Context.MODE_PRIVATE);
 
-        Log.d(TAG, "Type onCreateView: success");
+        Log.d(TAG, "TypeSystem onCreateView: success");
         defineIds();
         handleClick();
         return view;
