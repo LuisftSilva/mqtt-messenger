@@ -6,6 +6,7 @@ import android.arch.persistence.room.PrimaryKey;
 
 @Entity(tableName = "sensor")
 public class Sensor {
+
     @PrimaryKey(autoGenerate = true)
     private int uid;
 

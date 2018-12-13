@@ -5,15 +5,19 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
+import luis.silva.mqttmessenger.model.buttons.OnOffButton;
+import luis.silva.mqttmessenger.model.buttons.OnOffButtonDao;
 import luis.silva.mqttmessenger.model.sensor.Sensor;
 import luis.silva.mqttmessenger.model.sensor.SensorDao;
 
-@Database(entities = {Sensor.class}, version = 1)
+@Database(entities = {Sensor.class, OnOffButton.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
     private static AppDatabase INSTANCE;
 
     public abstract SensorDao sensorDao();
+
+    public abstract OnOffButtonDao onOffButtonDao();
 
     public static AppDatabase getAppDatabase(Context context) {
         if (INSTANCE == null) {

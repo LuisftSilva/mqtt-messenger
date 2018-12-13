@@ -10,6 +10,7 @@ import java.util.Objects;
 
 import luis.silva.mqttmessenger.R;
 import luis.silva.mqttmessenger.model.AppDatabase;
+import luis.silva.mqttmessenger.model.buttons.OnOffButton;
 import luis.silva.mqttmessenger.model.sensor.Sensor;
 
 public class Home extends AppCompatActivity {
@@ -31,7 +32,9 @@ public class Home extends AppCompatActivity {
         Log.d(TAG, "Home onCreate: success");
 
 
-        populateSensorWithData(AppDatabase.getAppDatabase(getBaseContext()));
+       // populateSensorWithData(AppDatabase.getAppDatabase(getBaseContext()));
+
+       // populateOnOffButtonWithData(AppDatabase.getAppDatabase(getBaseContext()));
 
         AppDatabase appDatabase = AppDatabase.getAppDatabase(getBaseContext());
 
@@ -45,6 +48,23 @@ public class Home extends AppCompatActivity {
         System.out.println(user0.getBroker());
         System.out.println(user0.getTopic());
         System.out.println(user0.getScale());
+
+        List<OnOffButton> onOffButtons =
+                appDatabase.onOffButtonDao().getAll();
+
+        OnOffButton user1 = onOffButtons.get(0);
+
+        System.out.println(onOffButtons.size());
+        System.out.println("!!!!!!!!!!!!!!!!!!!");
+        System.out.println(user1.getBroker());
+        System.out.println(user1.getTopic());
+        System.out.println(user1.getOnCommand());
+        System.out.println(user1.getOffCommand());
+        System.out.println(user1.getFeedback());
+        System.out.println(user1.getFeedbackTopic1());
+        System.out.println(user1.getFeedbackMessage1());
+        System.out.println(user1.getFeedbackTopic2());
+        System.out.println(user1.getFeedbackMessage2());
     }
 
 
@@ -53,12 +73,31 @@ public class Home extends AppCompatActivity {
         return sensor;
     }
 
+    private static OnOffButton addOnOffButton(final AppDatabase db, OnOffButton onOffButton) {
+        db.onOffButtonDao().insertAll(onOffButton);
+        return onOffButton;
+    }
+
     private static void populateSensorWithData(AppDatabase db) {
         Sensor sensor = new Sensor();
         sensor.setBroker("broker bla bla bla");
         sensor.setTopic("topic bla bla bla");
         sensor.setScale("C");
         addSensor(db, sensor);
+    }
+
+    private static void populateOnOffButtonWithData(AppDatabase db) {
+        OnOffButton onOffButton = new OnOffButton();
+        onOffButton.setBroker("broker.hivemq.com");
+        onOffButton.setTopic("light1234down");
+        onOffButton.setOnCommand("1");
+        onOffButton.setOffCommand("0");
+        onOffButton.setFeedback("1");
+        onOffButton.setFeedbackTopic1("1");
+        onOffButton.setFeedbackMessage1("1");
+        onOffButton.setFeedbackTopic2("0");
+        onOffButton.setFeedbackMessage2("0");
+        addOnOffButton(db, onOffButton);
     }
 
 }
